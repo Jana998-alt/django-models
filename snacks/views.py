@@ -5,6 +5,12 @@ from snacks.models import Snack
 
 # Create your views here.
 
-class HomeView(TemplateView):
-    template_name = 'home.html'
+class SnackListView(TemplateView):
+    template_name = 'snack_list.html'
     model = Snack
+
+class snack_detail(TemplateView):
+    template_name = 'snack_detail.html'
+    model = Snack
+
+    
