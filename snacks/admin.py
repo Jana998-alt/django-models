@@ -4,3 +4,7 @@ from .models import Snack
 # Register your models here.
 
 admin.site.register(Snack)
+class AdminThing(admin.ModelAdmin):
+    list_display= ['name', 'reviewer']
+    search_fields = ['name']
+    list_display_links = ('reviewer',)
